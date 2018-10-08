@@ -1,0 +1,23 @@
+<view class="main">
+  <view class='img'>
+    <image src="{{collected.imgSrc}}"></image>
+  </view>
+  <view>
+    <image src="/images/avatar/1.png" class='author'></image>
+    <text class='time'>{{collected.author}}</text>
+    <text class='times'>发表于</text>
+    <text class='times'>{{collected.dateTime}}</text>
+  </view>
+  <text class='title'>{{collected.title}}</text>
+  <view class='collect'>
+    
+    <view class='img-location' >
+      <image src="/images/icon/collection-anti.png" class='author-img'bindtap=""></image>
+      <image src="/images/icon/share.png" class='author-img'></image>
+    </view>
+    <view class='line'></view>
+  </view>
+  <view class='browse'>
+    <text class='content'>{{collected.detail}}</text>
+  </view>
+</view>

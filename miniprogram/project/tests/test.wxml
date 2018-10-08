@@ -1,0 +1,62 @@
+<!-- 轮播图 -->
+<!-- <view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src='{{item}}'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view> -->
+<!-- 图标icon -->
+<!-- <view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="40"/>
+  </block>
+</view>
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="40" color="{{item}}"/>
+  </block>
+</view> -->
+
+<!-- HTML转格式书写 -->
+<!-- <view class="page-body">
+  <view class="page-section">
+    <view class="page-section-title">传入html字符串</view>
+    <view class="rich-text-wrp">
+      <rich-text nodes="{{html}}" bindtap="tap"></rich-text>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">传入节点列表</view>
+    <view class="rich-text-wrp">
+      <rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+    </view>
+  </view>
+</view> -->
+
+<!-- 按钮属性 -->
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> primary </button>
+<button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="warn"> warn </button>
+<button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
+<button bindtap="setPlain">点击设置以上按钮plain属性</button>
+<button bindtap="setLoading">点击设置以上按钮loading属性</button>
+<button open-type="contact">进入客服会话</button>
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>

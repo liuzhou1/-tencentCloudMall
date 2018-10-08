@@ -1,0 +1,4 @@
+<view class="container">
+  <view class="hint">{{view}}</view>
+  <view class="start" bindtap='start'>开启小程序之旅</view>
+</view>

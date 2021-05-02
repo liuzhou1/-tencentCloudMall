@@ -1,0 +1,64 @@
+<view class='body'>
+ <block wx:for="{{shoppingData}}" wx:key="{{}}" wx:for-item="item">
+  <view class='content'>
+    <view>
+      <view class="page-section page-section-spacing swiper">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" indicator-active-color="#D5DDF0" next-margin="{{nextMargin}}px">
+          <block wx:for="{{item.shopInfo}}" wx:key="*this">
+            <swiper-item>
+              <image src='{{item}}' class='swiper-item' bindtap='text'></image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+    <view class='price'>
+      ￥
+      <text>{{item.price}}</text>
+    </view>
+    <view class='title'>
+      <view class='titles'>{{item.title}}</view>
+      <view class='share'>
+        <image src='/images/tab/share.png'></image> 分享
+      </view>
+    </view>
+    <view class='hint'>
+      <view class='hint-left'>快递：包邮</view>
+      <view class='hint-center'>已售 {{item.num}} 件</view>
+      <view class='hint-right'>{{item.location}}</view>
+    </view>
+    <view class='specification'>
+      <view class=''>
+        <text>领卷</text>
+        <view class='roll'>满100减10元</view>
+        <view class='roll'>满499减80元</view>
+      </view>
+      <view class='select'>
+        <text>规格</text>
+        <view class=''>颜色 分类 </view>
+      </view>
+    </view>
+  </view>
+  <view class='foot'>
+    <view class='foot-left'>
+      <view bindtap='homePage'>
+        <image src='/images/tab/home-page.png'></image>
+        <view>首页</view>
+      </view>
+      <view>
+        <image src='/images/tab/service.png'></image>
+        <view>客服</view>
+      </view>
+      <view bindtap='goShopCar'>
+        <image src='/images/tab/collect.png'></image>
+        <view>购物车</view>
+      </view>
+    </view>
+    <view class='foot-right'>
+      <view class='shppingCar' bindtap='shopCar'>加入购物车</view>
+      <view class='buy'>立即购买</view>
+    </view>
+  </view>
+ </block>
+ <view class='scceed-join' hidden="{{hidden}}">已加入购物车！</view>
+</view>

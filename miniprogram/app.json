@@ -1,22 +1,51 @@
 {
   "cloud": true,
   "pages": [
-
-    "project/tests/test",
-    "project/myCentre/myCentre",
-    "project/tests/test-content",
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/my/my",
+    "pages/shppingCar/shppingCar",
+    "pages/classify/classify",
+    "pages/commoditie/commoditie",
+    "pages/message/message",
+    "pages/message/message-content/message-content",
+    "pages/welcome/welcome"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
+    "backgroundColor": "#fff",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#405f80",
-    "navigationBarTitleText": "",
-    "navigationBarTextStyle": "write"
-  }
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首 页",
+        "iconPath": "/images/tab/home-page.png",
+        "selectedIconPath": "/images/tab/home-page-select.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "资 讯",
+        "iconPath": "/images/tab/shpping.png",
+        "selectedIconPath": "/images/tab/shpping-select.png"
+      },
+      {
+        "pagePath": "pages/shppingCar/shppingCar",
+        "text": "购物车",
+        "iconPath": "/images/tab/message.png",
+        "selectedIconPath": "/images/tab/message-select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我 的",
+        "iconPath": "/images/tab/my.png",
+        "selectedIconPath": "/images/tab/my-select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

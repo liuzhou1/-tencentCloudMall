@@ -1,0 +1,83 @@
+image {
+  width: 92%;
+  height: 9rem;
+  border-radius: 0.3rem;
+}
+
+.content {
+  margin: 0.5rem 1rem;
+}
+
+.content>view {
+  width: 50%;
+  display: inline-block;
+}
+
+.title {
+  font-size: 0.9rem;
+  color: #424242;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}
+
+.introduce {
+  font-size: 0.85rem;
+  color: #515151;
+}
+
+.price {
+  font-size: 0.9rem;
+  color: #f40;
+}
+
+.price>text {
+  font-size: 1.3rem;
+  margin-left: -0.2rem;
+}
+
+.hint-center {
+  display: inline-block;
+  color: #999;
+  margin-left: 1rem;
+  font-size: 0.85rem;
+}
+
+.hints {
+  display: inline-block;
+  color: #f40;
+  border: 1px solid #f40;
+  padding: 0px 2px;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 0.7rem;
+}
+
+.site>view {
+  display: inline-block;
+  color: #616161;
+  font-size: 0.8rem;
+  vertical-align: top;
+}
+
+.site-right {
+  float: right;
+}
+
+.right>view {
+  margin-top: 0.22rem;
+}
+.no-img{
+  width: 3rem;
+  height: 1.7rem;
+}
+.foot{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  color: #727171;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}

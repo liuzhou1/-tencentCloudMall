@@ -1,0 +1,51 @@
+<view>
+  <view class='main'>
+    <view class="title">
+      <text class='car'>购物车(15)</text>
+      <text class='management' bindtap='management'>管理</text>
+    </view>
+    <view class='content'>
+      <checkbox-group class="group" bindchange="checkboxChange">
+        <view class="contents" wx:for="{{shopCaRData}}">
+          <view class='contents-select'>
+            <checkbox value='{{item._id}}' checked="{{item.data.checked}}"></checkbox>
+            <view class="label-1__icon">
+              <view class="label-1__icon-checked" style="opacity:{{item.data.checked ? 1: 0}}"></view>
+            </view>
+          </view>
+          <view class='commoditie-box'>
+            <view class='left'>
+              <image src='{{item.data.pic_path}}'></image>
+            </view>
+            <view class='right'>
+              <view class="titles"> {{item.data.title}}</view>
+              <view class='piece'>
+                <text>￥{{item.data.priceWap}}</text>
+                <view class='num'>
+                  <text style='border-radius: 3px 0 0 3px;' id='{{index}}' bindtap='lessen'>-</text>
+                  <input type='number' value='{{item.data.pieceNums}}' name='piece' id='{{index}}' bindblur="changeVal" />
+                  <text style='border-radius: 0 3px 3px 0;' id='{{index}}' bindtap='add'>+</text>
+                </view>
+              </view>
+              <view class=''>{{item.data.nick}}</view>
+            </view>
+          </view>
+        </view>
+      </checkbox-group>
+    </view>
+    <view class='foot'>
+      <image src='/images/tab/no-commoditie.png' class='no-img'></image>
+      <text>没有宝贝了，再去逛逛吧！</text>
+    </view>
+    <view class='calculate'>
+      <view class='all-select'>
+        <switch value='all' checked="{{checked}}" bindchange="allChange" type='checkbox'></switch>
+        <text>全选</text>
+      </view>
+      <view class='money'>
+      <text>合计:</text><text style='color:#f40;font-size:1.1rem;'>￥{{allMoneys}}</text>
+      <view class='buy'>结算</view>
+      </view>
+    </view>
+  </view>
+</view>

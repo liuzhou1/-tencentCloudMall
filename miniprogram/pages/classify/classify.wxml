@@ -1,0 +1,30 @@
+<view class='body'>
+ <block wx:for="{{shoppingData}}" wx:key="{{}}" wx:for-item="item">
+  <view class='content' bindtap='commodity' id='{{item.id}}'>
+    <view class='left'>
+      <image src='{{item.pic_path}}' class=''></image>
+    </view>
+    <view class='right'>
+      <view class='title'>{{item.title}}</view>
+      <view class='introduce'>{{item.hint[0]}} {{item.hint[1]}}</view>
+      <view class='hint'>
+          <view class='hints'>七天无理由退换</view>
+          <view class='hints'>包邮</view>
+        </view>
+      <view class='price'>
+        ￥
+        <text>{{item.price}}</text>
+        <view class='hint-center'>{{item.num}}人付款</view>
+      </view>
+      <view class='site'>
+        <view class='site-left'>{{item.nick}}</view>
+        <view class='site-right'>{{item.location}}</view>
+      </view>
+    </view>
+  </view>
+ </block> 
+ <view class='foot'>
+  <image src='/images/tab/no-commoditie.png' class='no-img'></image>
+  <text>没有更多了！</text>
+ </view>
+</view>

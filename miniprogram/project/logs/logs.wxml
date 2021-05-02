@@ -1,4 +1,0 @@
-<view class="container">
-  <view class="hint">{{view}}</view>
-  <view class="start" bindtap='start'>授权登陆</view>
-</view>
